@@ -1,0 +1,207 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* reset end */
+body {
+  font-family: "Noto Sans TC";
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0;
+  background-color: #FBFBFB;
+}
+
+.header ul {
+  display: flex;
+  justify-content: center;
+}
+.header ul li {
+  padding: 24px 40px 24px 0px;
+  font-weight: 700;
+  font-size: 28px;
+}
+.header ul li a {
+  text-decoration: none;
+  color: #000;
+}
+.header ul li a:hover {
+  color: #4B4B4B;
+}
+
+.header_container {
+  display: flex;
+}
+.header_container .header_text {
+  font-display: column;
+  align-self: center;
+  padding-left: 24px;
+}
+.header_container .header_text time {
+  gap: 8px;
+  padding-bottom: 4px;
+}
+.header_container .header_text h3 {
+  font-size: 24px;
+  color: #0027D5;
+  padding-bottom: 8px;
+}
+.header_container .header_text a {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #FFF;
+  border: 1px solid #0027D5;
+  border-radius: 20px;
+  margin-left: 8px;
+  background-color: #0027D5;
+  padding: 6px 12px 6px 12px;
+}
+.header_container .header_text a:hover {
+  background-color: palevioletred;
+}
+.header_container .header_text h2 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.content {
+  margin: 0 auto;
+  width: 636px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.content .box {
+  padding-bottom: 48px;
+}
+.content .box h2 {
+  color: #0027D5;
+  font-weight: 700;
+  font-size: 28px;
+  padding-bottom: 24px;
+}
+.content .box img {
+  padding-bottom: 24px;
+}
+.content .box h3 {
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 12px;
+}
+.content .box .text_1 {
+  padding-bottom: 8px;
+}
+.content .box .text_2 {
+  padding-bottom: 24px;
+}
+.content .box .text_2 ol li {
+  list-style-position: inside;
+  list-style-type: decimal;
+}
+.content .box .text_2 ul li {
+  list-style-position: inside;
+  list-style-type: disc;
+}
+.content .box .text_2 ul li span {
+  color: #0027D5;
+}
+.content .box .text_2 a {
+  color: #0027D5;
+}
+.content .box .text_2 a:hover {
+  color: palevioletred;
+}
+.content .box .text_3 ul li {
+  list-style-position: inside;
+  list-style-type: disc;
+}
+.content .box .summary {
+  font-weight: 700;
+  border-radius: 24px;
+  background-color: #EDEDED;
+  padding: 24px;
+  gap: 12px;
+}
+.content .button ul {
+  display: flex;
+  justify-content: space-between;
+}
+.content .button ul a {
+  color: #4B4B4B;
+  border: 1px solid #000000;
+  border-radius: 40px;
+  padding: 8px 16px 8px 16px;
+  gap: 4px;
+  text-decoration: none;
+}
+.content .button ul a:hover {
+  background-color: lightgray;
+}
+
+.footer_1 {
+  display: flex;
+  justify-content: center;
+  padding: 80px 312px 80px 312px;
+  gap: 24px;
+}
+.footer_1 p {
+  font-size: 32px;
+  width: 1036px;
+}
+.footer_1 .icon img {
+  width: 24px;
+  height: 24px;
+  filter: invert(15%) sepia(100%) saturate(4310%) hue-rotate(232deg) brightness(78%) contrast(121%);
+}
+
+.footer_2 {
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background-color: #fff;
+}/*# sourceMappingURL=all.css.map */
