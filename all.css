@@ -77,7 +77,11 @@ body {
 .header_container {
   display: flex;
 }
+.header_container img {
+  max-width: 50%;
+}
 .header_container .header_text {
+  max-width: 50%;
   font-display: column;
   align-self: center;
   padding-left: 24px;
@@ -110,11 +114,55 @@ body {
   font-size: 28px;
 }
 
+@media screen and (max-width: 680px) {
+  .header_container {
+    display: block;
+  }
+  .header_container img {
+    max-width: 100%;
+  }
+  .header_container .header_text {
+    max-width: 100%;
+    font-display: column;
+    align-self: center;
+    padding: 48px 12px 48px 12px;
+  }
+  .header_container .header_text time {
+    gap: 8px;
+    padding-bottom: 4px;
+  }
+  .header_container .header_text h3 {
+    font-size: 24px;
+    color: #0027D5;
+    padding-bottom: 8px;
+  }
+  .header_container .header_text a {
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #FFF;
+    border: 1px solid #0027D5;
+    border-radius: 20px;
+    margin-left: 8px;
+    background-color: #0027D5;
+    padding: 6px 12px 6px 12px;
+  }
+  .header_container .header_text a:hover {
+    background-color: palevioletred;
+  }
+  .header_container .header_text h2 {
+    font-weight: 700;
+    font-size: 28px;
+  }
+}
 .content {
   margin: 0 auto;
-  width: 636px;
+  max-width: 636px;
   padding-top: 80px;
   padding-bottom: 80px;
+}
+.content img {
+  max-width: 100%;
 }
 .content .box {
   padding-bottom: 48px;
@@ -183,23 +231,35 @@ body {
   background-color: lightgray;
 }
 
+@media screen and (max-width: 680px) {
+  .content {
+    padding: 64px 12px 64px 12px;
+  }
+}
 .footer_1 {
   display: flex;
   justify-content: center;
   padding: 80px 312px 80px 312px;
   gap: 24px;
+  max-width: 100%;
 }
 .footer_1 p {
   font-size: 32px;
-  width: 1036px;
+  max-width: 1036px;
 }
 .footer_1 .icon img {
-  width: 24px;
+  max-width: 24px;
   height: 24px;
   filter: invert(15%) sepia(100%) saturate(4310%) hue-rotate(232deg) brightness(78%) contrast(121%);
 }
 
+@media screen and (max-width: 680px) {
+  .footer_1 {
+    display: none;
+  }
+}
 .footer_2 {
+  max-width: 100%;
   text-align: center;
   padding-top: 24px;
   padding-bottom: 24px;
